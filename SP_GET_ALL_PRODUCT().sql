@@ -1,0 +1,6 @@
+DELIMITER $$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `SP_GET_ALL_PRODUCT()`()
+BEGIN
+	SELECT cod_produto FROM producto;
+END$$
+DELIMITER ;
