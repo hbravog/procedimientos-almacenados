@@ -1,0 +1,7 @@
+DELIMITER //
+CREATE PROCEDURE SP_GET_PRODUCT_BY_CODE(IN cod VARCHAR(10))
+
+BEGIN
+ SELECT cod_produto FROM producto WHERE cod_producto = cod;
+END //
+DELIMITER ;
